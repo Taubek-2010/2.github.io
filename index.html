@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Математические Flash Cards | Изучайте легко!</title>
+    <link rel="stylesheet" href="styles.css">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css">
+    <script src="https://polyfill.io/v3/polyfill.min.js?features=es6"></script>
+    <script id="MathJax-script" async src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+</head>
+<body>
+    <div class="background-animation"></div>
+    <div class="container">
+        <header class="animate__animated animate__fadeInDown">
+            <h1><i class="fas fa-square-root-alt"></i> Математические Flash Cards</h1>
+            <p>Изучайте сложные концепции простым способом</p>
+        </header>
+        
+        <div class="controls animate__animated animate__fadeIn">
+            <button id="prev-btn" class="control-btn"><i class="fas fa-arrow-left"></i></button>
+            <span id="card-counter">1/10</span>
+            <button id="next-btn" class="control-btn"><i class="fas fa-arrow-right"></i></button>
+            <button id="shuffle-btn" class="secondary-btn"><i class="fas fa-random"></i></button>
+            <button id="theme-btn" class="secondary-btn"><i class="fas fa-moon"></i></button>
+        </div>
+        
+        <div class="flashcard-container animate__animated animate__zoomIn">
+            <div class="flashcard" id="flashcard">
+                <div class="card-front">
+                    <div class="card-content">
+                        <h2 class="card-title">Загрузка...</h2>
+                        <div class="card-image math-bg"></div>
+                    </div>
+                    <button class="flip-btn"><i class="fas fa-sync-alt"></i> Показать ответ</button>
+                </div>
+                <div class="card-back">
+                    <div class="card-content">
+                        <p>Загрузка...</p>
+                        <div class="card-image math-bg"></div>
+                    </div>
+                    <button class="flip-btn"><i class="fas fa-sync-alt"></i> Показать вопрос</button>
+                </div>
+            </div>
+        </div>
+        
+        <div class="progress-container animate__animated animate__fadeIn">
+            <div class="progress-bar" id="progress-bar"></div>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
